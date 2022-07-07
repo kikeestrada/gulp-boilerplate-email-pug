@@ -1,0 +1,21 @@
+{
+	"casos":
+		[
+			{
+				"img": "images/img1.jpg",
+				"title": "title image 1"
+			},
+			{
+				"img": "images/img2.jpg",
+				"title": "title image 2"
+			},
+			{ 
+				"img": "images/img3.jpg",
+				"title": "title image 3"
+			},
+			{
+				"img": "images/img4.jpg",
+				"title": "title image 4"
+			}
+		]
+}

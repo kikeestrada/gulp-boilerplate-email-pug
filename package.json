@@ -1,0 +1,51 @@
+{
+	"name": "gulp-boilerplate",
+	"version": "1.0.0",
+	"description": "Simple scafolding for statics web projects",
+	"main": "gulpfile.babel.js",
+	"homepage": "https://kikeestrada.github.io/gulp-boilerplate/",
+	"scripts": {
+		"start": "gulp",
+		"pug": "gulp pug",
+		"scripts": "gulp scripts",
+		"images": "gulp images",
+		"sitemap": "gulp sitemap",
+		"deploy": "gh-pages -d public"
+	},
+	"author": "Enrique Estrada",
+	"license": "GPL-2.0",
+	"dependencies": {
+		"gh-pages": "^2.1.1"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.7.0",
+		"babel-register": "^6.26.0",
+		"babelify": "^8.0.0",
+		"browser-sync": "^2.24.7",
+		"browserify": "^16.2.2",
+		"cssnano": "^4.1.8",
+		"gulp": "^3.9.1",
+		"gulp-babel": "^8.0.0",
+		"gulp-cache-bust": "^1.4.0",
+		"gulp-clean-css": "^2.4.0",
+		"gulp-data": "^1.3.1",
+		"gulp-humans": "^2.0.2",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-mail": "^0.4.1",
+		"gulp-minify": "^3.1.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-pug": "^4.0.1",
+		"gulp-sass": "^4.0.1",
+		"gulp-sitemap": "^5.1.0",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-strip-css-comments": "^1.2.0",
+		"gulp-uncss": "^1.0.6",
+		"gulp-watch": "^5.0.1",
+		"jstransformer-markdown-it": "^2.1.0",
+		"node-sass-tilde-importer": "^1.0.2",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0"
+	}
+}

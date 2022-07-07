@@ -1,0 +1,27 @@
+h1 Write markdown text from the pug file 
+:markdown-it
+	- Text from the pug file
+h1 Write html (pre) tag from the pug file
+:markdown-it(html)
+	```html
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<title>Pug</title>
+			<script type="text/javascript">
+				foo = true;
+				bar = function () {};
+				if (foo) { bar(1 + 5) }
+			</script>
+		</head>
+		<body>
+			<h1>Pug - node template engine</h1>
+			<div id="container" class="col">
+			<p>You are amazing</p>
+			<p> Lorem ipsum.</p>
+			</div>
+		</body>
+		</html>
+	```
+h1 Importing external Markdown file 
+include:markdown-it(html) ../../md/example.md

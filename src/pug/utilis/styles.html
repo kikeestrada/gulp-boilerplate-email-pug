@@ -1,0 +1,288 @@
+<style type="text/css">
+	/* STYLES HERE! */
+	/* RESET CLASSES */
+	html {
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	}
+	body {
+	margin: 0;
+	padding: 0;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	}
+	html,
+	body,
+	table,
+	table td {
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	img {
+	border: 0 none;
+	height: auto;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+	display: block;
+	}
+	a {
+	outline: 0;
+	text-decoration: none !important;
+	}
+	a, a:active, a:link, a:visited {
+	color: #000000;
+	}
+	a img {
+	border: none;
+	}
+	a.phone {
+	text-decoration: none;
+	color: #000001 !important;
+	pointer-events: auto;
+	cursor: default;
+	}
+
+	.blueLinks a { 
+	color:inherit !important; 
+	text-decoration: none !important; 
+	}
+	/* phone link, use as wrapper on phone numbers */
+	/* GENERAL STYLE RESETS */
+	body, #bodyTable { height:100% !important; width:100% !important; margin:0; padding:0; }
+	img, a img { border:0; outline:none; text-decoration:none; }
+	.imageFix { display:block; }
+	table, td { border-collapse:collapse; }
+	/* What it does: Remove spaces around the email design added by some email clients. */
+	/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+	html,
+	body {
+	margin: 0 auto !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+	}
+	/* What it does: Stops email clients resizing small text. */
+	* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	}
+	/* What it does: Centers email on Android 4.4 */
+	div[style*="margin: 16px 0"] {
+	margin:0 !important;
+	}
+	/* What it does: Stops Outlook from adding extra spacing to tables. */
+	table,
+	td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+	}
+	/* What it does: Fixes webkit padding issue. */
+	table {
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse
+	}
+	/* What it does: Forces Samsung Android mail clients to use the entire viewport. */
+	#MessageViewBody,
+	#MessageWebViewDiv{
+	width: 100% !important;
+	}
+	/* What it does: Uses a better rendering method when resizing images in IE. */
+	img {
+	-ms-interpolation-mode:bicubic;
+	}
+	/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+	a {
+	text-decoration: none;
+	}
+	/* What it does: A work-around for email clients automatically linking certain text strings. */
+	/* iOS */
+	a[x-apple-data-detectors],
+	.unstyle-auto-detected-links a,
+	.aBn {
+	border-bottom: 0 !important;
+	cursor: default !important;
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+	}
+	u + #body a,        /* Gmail */
+	#MessageViewBody a  /* Samsung Mail */
+	{
+	color: inherit;
+	text-decoration: none;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	}
+	/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+	.im {
+	color: inherit !important;
+	}
+	/* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+	.a6S {
+	display: none !important;
+	opacity: 0.01 !important;
+	}
+	/* If the above doesn't work, add a .g-img class to any image in question. */
+	img.g-img + div {
+	display:none !important;
+	}
+	/* What it does: Removes right gutter in Gmail iOS app.  */
+	/* Outlook.com */
+	#outlook a {
+	padding: 0;
+	}
+	/* Center your email in Outlook.com */
+	.ExternalClass {width: 100%;}
+	/* Overwrite Outlook.com’s Embedded CSS */
+	table {border-collapse:separate;}
+	a, a:link, a:visited {text-decoration: none; color: #00788a;}
+	a:hover {text-decoration: underline;}
+	h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {color:#000 !important;}
+	.ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;}
+	
+	.ReadMsgBody {
+	width: 100%;
+	background-color: #FFFFFF;
+	}
+	/* Microsoft Outlook desktop clients */
+	table {
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+	}
+	td {
+	mso-line-height-rule: exactly;
+	}
+	img {
+	-ms-interpolation-mode: bicubic;
+	}
+	a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+	}
+	/* Gmail fixes*/
+	
+	/* RESET CLASSES */
+	/* RESPONSIVE CLASSES */
+	.desktop-hide,
+	.mobile-only,
+	.mobile-only-block-full,
+	.mobile-only-table-full {
+	display: none;
+	max-height: 0px;
+	mso-hide: all;
+	overflow: hidden;
+	visibility: hidden;
+	}
+	/* display: none; max-height: 0px; overflow: hidden; visibility: hidden; mso-hide: all; */
+	@media screen and (max-width: 480px) {
+	table[class="main-table"],
+	table[class="table-responsive"] {
+	width: 100% !important;
+	}
+	img[class="img-responsive"],
+	img[class="fullwidth"]{
+	height: auto !important;
+	width: 100% !important;
+	}
+	.show, *[class~="show"],
+	.desktop-hide,
+	*[class~="desktop-hide"],
+	.mobile-only,
+	*[class~="mobile-only"] {
+	display: block !important;
+	max-height: none !important;
+	overflow: visible !important;
+	visibility: visible !important;
+	}
+	.mobile-only-block-full,
+	*[class~="mobile-only-block-full"] {
+	clear: both !important;
+	float: none !important;
+	display: block !important;
+	max-height: none !important;
+	height: auto !important;
+	width: 100% !important;
+	overflow: visible !important;
+	visibility: visible !important;
+	}
+	.mobile-only-table-full,
+	*[class~="mobile-only-table-full"] {
+	clear: both !important;
+	float: none !important;
+	display: table !important;
+	max-height: none !important;
+	height: auto !important;
+	width: 100% !important;
+	overflow: visible !important;
+	visibility: visible !important;
+	}
+	.hide, *[class~="hide"],
+	.desktop-only,
+	*[class~="desktop-only"],
+	.mobile-hide,
+	*[class~="mobile-hide"] {
+	display: none !important;
+	height: 0 !important;
+	margin: 0 !important;
+	max-height: 0 !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	visibility: hidden !important;
+	width: 0 !important;
+	}
+	.stack-col,
+	*[class~="stack-col"] {
+	width: 100%;
+	box-sizing: border-box;
+	clear: both !important;
+	float: none !important;
+	display: block !important;
+	}
+	/* Add your responsive classes here */
+	.p0, *[class~="p0"] {
+	padding: 0 !important;
+	}
+	.px20, *[class~="px20"] {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	}
+	.center, *[class~="center"] {
+	text-align: center !important;
+	}
+	/* if class defined with *[class~=] then you can combine names i.e: class="px20 center"*/
+	
+	}
+	@media only screen and (max-width: 480px) {
+		.no_padding{padding: 0 !important;}
+	.center-text{
+		display: block !important;
+		text-align: center !important;
+	}
+	.logo_mb{
+		width: 207px !important;
+		height: auto !important;
+	}
+	.title_size{
+		font-size:12px !important;
+		line-height:16px !important;
+	}
+	span.no-mobile{
+		display: none !important;
+		color: #ff0000 !important;
+	}
+	}
+	@media only screen and (max-width: 375px) {}
+	@media only screen and (max-width: 360px) {}
+	@media only screen and (max-width: 320px) {}
+	/* RESPONSIVE CLASSES */
+	</style>
